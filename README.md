@@ -1,6 +1,6 @@
 # basicJavascript
 
-### JS ES 6 ~ 11 까지
+### JS ES 3 ~ 11 까지
 내용 암기 필수(약 300줄)
 - [x] ES 3 1999
 - [x] ES 5 2009
