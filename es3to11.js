@@ -1,4 +1,4 @@
-// ES3~4
+// ES3 ~ 6
 //// 변수 : 변수 선언시 타입을 지정하지 않고 사용 가능하며, var 키워드 사용시 호이스팅에 유의해야합니다
 var value = 1;
 value = "2";
@@ -206,11 +206,6 @@ let futureContext = async () => {
 
 futureContext();
 
-// ES 6 ~ 11 총 정리
-// * 지원 브라우져 확인 : https://caniuse.com/
-////////////////////////////// 
-// ES6 ES2015
-
 // - Class
 {
     class Person {
@@ -315,6 +310,9 @@ import * as Name from "a.js";
     console.log(a3);
 }
 
+
+// ES 7 ~ 11 총 정리
+// * 지원 브라우져 확인 : https://caniuse.com/
 ////////////////////////////// 
 // ES7 ES2016
 
