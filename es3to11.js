@@ -18,6 +18,15 @@ value3 = 4; // 불가능
 
 // 배열 : 명칭과 동작 방식은 같다고 보지만 시스템 구조상 차이점은 있음
 var li = [];
+// 배열 생성 
+{
+  var arr0 = [1,2,3]; // [1,2,3] // length : 3 
+  var arr1 = new Array(3); // [ , , ] // length : 3
+  var arr2 = Array.of(3); // [3] // length : 1
+  var arr3 = Array.of(1,2,3); // [1,2,3] // length : 3
+}
+
+
 // 객체 Object
 var ob = { "key" : "value" };
 // bool 동일
