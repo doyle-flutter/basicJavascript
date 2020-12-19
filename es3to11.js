@@ -98,6 +98,45 @@ new Ms(123).outPutA(); // 123
 var ms2 = new Ms(321);
 ms2.outPutA(); // 321
 
+// - 조건문
+{
+  if(true){
+    console.log('조건이 true');
+  }
+  // else if(){
+  //  추가 할 조건
+  // }
+  else{
+   console.log('조건이 false');
+  }
+}
+
+// 반복문
+{
+  for(let i=0; i < 10; i++){
+    console.log(i,"반복"); // i는 횟수
+  }
+
+  // * 내용 중 in 연산자를 학습 후 다시 for-in / for-of 를 봐주세요
+	
+  let arrData = [1,2,3,4];
+  for(let i in arrData){
+    console.log(i, "반복 IN"); // i는 배열 arr의 인덱스 index 
+  }
+
+  for(let i of arrData){
+    console.log(i, "반복 OF"); // i는 배열 arr의 값 value
+  }
+
+  let objData = {a:1, b:2};
+  for(let i in objData){
+    console.log(i, "반복 IN"); // i는 객체의 key 
+  }
+
+}
+
+
+
 
 //// DOM & BOM
 /////////////////////// D.O.M
@@ -310,6 +349,30 @@ import * as Name from "a.js";
     console.log(a3);
 }
 
+// - in 연산자 : 객체 또는 배열의 인덱스 또는 속성(필드 및 메서드)을 찾음
+{
+  "length" in "123"; // ERR !
+  "length" in new String("123"); // true
+  
+  var data = "321";
+  "length" in new String(data); // true
+  2 in new String(data); // true
+
+  var arrData = [1,2,3];
+  3 in arrData; // false
+  "map" in arrData; // true
+  "length" in arrData; // true
+	
+  let objData = {a:1, b:"123"};
+  "a" in objData; // true
+  "b" in objData; // true
+	
+  class Ob{constructor(a){this.a=a} aa(){}}
+  let ob = new Ob();
+  "a" in ob; // true
+  "aa" in ob; // true
+	
+}
 
 // ES 7 ~ 11 총 정리
 // * 지원 브라우져 확인 : https://caniuse.com/
