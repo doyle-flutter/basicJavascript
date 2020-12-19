@@ -350,6 +350,7 @@ import * as Name from "a.js";
 }
 
 // - in 연산자 : 객체 또는 배열의 인덱스 또는 속성(필드 및 메서드)을 찾음
+// * 해당 연산자 학습 후 상단의 반복문 for-in / for-of 을 보시면 더욱 이해가 편합니다
 {
   "length" in "123"; // ERR !
   "length" in new String("123"); // true
