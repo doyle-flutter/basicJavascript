@@ -487,14 +487,18 @@ import * as Name from "a.js";
     promisePlay();
 }
 
-// - generator & promise
+// - generator
 {
-    async function* a(){
+    function* a(){
         yield 1;
         yield 2;
         yield 3;
     }
-    a().next().next().then(v => console.log(v.value)).finally(() => console.log('finally'));
+    var aa = a();
+    var d1 = aa.next();
+    console.log(d1);
+    var d2 = aa.next();
+    console.log(d2);
 }
 
 // - for of & Promise
